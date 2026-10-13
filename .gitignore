@@ -1,0 +1,17 @@
+# secrets
+.env
+*.secret
+*.key
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# local runtime
+*.log
+*.tmp
+chroma/
+data/
+demo/*.mp4

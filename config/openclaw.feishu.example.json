@@ -1,0 +1,25 @@
+{
+  "//": "Example only. Values are placeholders / redacted. Do NOT commit real secrets.",
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "appId": "<YOUR_FEISHU_APP_ID>",
+      "appSecret": "<YOUR_FEISHU_APP_SECRET>",
+      "dmPolicy": "pairing",
+      "groupPolicy": "allowlist"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": { "enabled": true }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "~/openclaw_workspace",
+      "model": "<your-model>"
+    }
+  }
+}
