@@ -20,6 +20,11 @@ import urllib.request
 WEBHOOK = os.environ.get("FEISHU_WEBHOOK", "").strip()
 
 
+def configured() -> bool:
+    """True if a webhook URL is available (i.e. we can actually send)."""
+    return bool(WEBHOOK)
+
+
 def send(text: str) -> dict:
     if not WEBHOOK:
         raise SystemExit("FEISHU_WEBHOOK is not set.")
